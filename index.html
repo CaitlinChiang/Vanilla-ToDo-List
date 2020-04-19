@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/app.js"></script>
+	<title>Javascript - To Do List</title>
+</head>
+
+<body>
+
+<div class="container" id="header">
+	<h1><span style="color: #ffff99">TODO</span>List</h1>
+</div>
+
+<div class="container">
+	<form autocomplete="off">
+		<input type="text" id="todo_input" placeholder="Add Task" onkeypress="return keyPress(event)">
+
+		<div id="addTask_buttons">
+			<input type="button" id="add_button" value="Add" onclick="input_check.check();">
+			<input type="button" id="cancel_button" value="Cancel" onclick="addTask_buttonFunctions.cancel();">
+		</div>
+	</form>
+</div>
+
+<section id="divider">
+	<div class="container"></div>
+</section>
+
+<section id="content">
+	<div class="container">
+		<h1>TASKS</h1>	
+		<ul id="ongoing_list"></ul>
+	</div>
+	<div class="container">
+		<h1>DONE</h1>
+		<ul id="done_list"></ul>
+	</div>
+</section>
+
+</body>
+
+</html>

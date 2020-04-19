@@ -1,0 +1,163 @@
+/*Global*/
+body {
+	font: 15px/1.5 Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: #3A3A40;
+}
+
+.container {
+	width: 99.3%;
+	overflow: hidden;
+}
+
+
+/*Header*/
+#header {
+	background: #2c3e50;
+	min-height: 30px;
+	border: #A0A0A0 5px solid;
+	padding-top: 10px;
+}
+
+#header h1 {
+	color: #bfc4dc;
+	text-align: center;
+}
+
+
+/*Add-To-Do*/
+#todo_input {
+	background: transparent;
+	padding: 0 20px 0 5px;
+	color: #ffffff;
+	height: 38px;
+	font-size: 15px;
+	float: left;
+	margin: 30px;
+	outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #A0A0A0 1px;
+}
+
+#add_button, #cancel_button {
+	height: 38px;
+	background: transparent;
+	border: 0;
+	padding: 0 20px 0 20px;
+	color: #ffffff;
+	margin-top: 30px;
+	margin-left: 10px;
+	font-size: 15px;
+	border-radius: 10px;
+	display: inline;
+	outline: none;
+}
+
+#add_button:hover, #cancel_button:hover {
+	border: #FF8A9A 1px solid;
+	color: #FF8A9A;
+	font-weight: bold;
+}
+
+
+/*Divider*/
+#divider {
+	border-top: 1px solid #bbb;
+}
+
+
+/*Content*/
+#content h1 {
+	color: #ffffff;
+	margin-left: 30px;
+	margin-top: 35px;
+}
+
+#ongoing_list, #done_list {
+	width: 50%;
+    padding-left: 30px;
+	margin-left: 30px;
+	color: #ffffff;
+	font-size: 20px;
+    min-height: 50px;
+    list-style: none;
+    display: inline-block;
+    cursor: default;
+}
+
+#input:first-child {
+	background: transparent;
+	color: #ffffff;
+	font-size: 21px;
+	outline-style: none;
+	border: none;
+}
+
+#input::placeholder {
+	color: #BEBEBE;
+}
+
+#input_done:first-child {
+	background: transparent;
+	color: #ffffff;
+	font-size: 21px;
+	outline-style: none;
+	border: none;
+	text-decoration: line-through;
+}
+
+.edit_mode {
+	text-decoration: underline;
+	text-decoration-color: #9a9a9a;
+}
+
+li:hover {
+	background: #777777;
+	border: #A0A0A0 5px;
+	min-height: 30px;
+}
+
+#done_button, #delete_button, #edit_button, #undo_button, #cancel_editButton {
+	background: transparent;
+	color: #f0d5c5;
+	font-size: 17px;
+	margin-left: 10px;
+	display: inline;
+	border: none;
+	outline: none;
+}
+
+#save_button {
+	background: transparent;
+	color: #f0d5c5;
+	font-size: 17px;
+	display: inline;
+	border: none;
+	outline: none;
+}
+ 
+#done_button:hover, #delete_button:hover, #edit_button:hover, #undo_button:hover, #save_button:hover, #cancel_editButton:hover {
+	border-bottom: #f0d5c5 1px solid;
+	color: #f0d5c5;
+	font-weight: bold;
+}
+
+li:hover #div_taskButtons, li:hover #div_doneTaskButtons {
+	display: inline;
+}
+	
+#div_taskButtons, #div_doneTaskButtons {
+	display: none;
+	float: right;
+}
+
+#cancel_save {
+	display: none;
+}
+
+li:hover #cancel_save {
+	display: block;
+}
