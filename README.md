@@ -1,2 +1,2 @@
-# TodoList_VanillaJavascript
-This is a project built in order to understand and learn Javascript.
+# Vanilla ToDo List
+This is my first coding project, done in order to learn Javascript.
